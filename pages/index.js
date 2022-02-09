@@ -19,8 +19,6 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item';
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
-import thumbYouTube from '../public/images/links/youtube.png';
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png';
 
 const Home = () => (
   <Layout>
@@ -68,8 +66,8 @@ const Home = () => (
         <Paragraph>
           Ahmad is a freelance full-stack developer based in Jordan with a
           passion for building digital services/stuff he wants. He has a knack
-          for all things about launching products, from planning and designing all the
-          way to solving real-life problems with code.
+          for all things about launching products, from planning and designing
+          all the way to solving real-life problems with code.
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="https://pdfhost.io/v/kHNOgJIaq_CV" target="_blank">

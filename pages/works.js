@@ -1,17 +1,19 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { WorkGridItem } from '../components/grid-item';
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbJnotebook from '../public/images/works/jnotebook.png';
+import thumbTodo from '../public/images/works/todo.png';
+import thumbGericht from '../public/images/works/gericht.png';
+import thumbChatify from '../public/images/works/chatify.png';
+import thumbAmazon from '../public/images/works/amazon.png';
+import thumbAirbnb from '../public/images/works/airbnb.png';
+import thumbLinked from '../public/images/works/linkedin.png';
+import thumbCoinbase from '../public/images/works/coinbase.png';
+import thumbMedium from '../public/images/works/medium.png';
+import thumbNetflix from '../public/images/works/netflix.png';
+import thumbJobify from '../public/images/works/jobify.png';
 
 const Works = () => (
   <Layout title="Works">
@@ -22,60 +24,33 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem
+            id="jnotebook"
+            title="Jnotebook"
+            thumbnail={thumbJnotebook}
+          >
+            An online compiler for React.js and javascript
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
+          <WorkGridItem id="jobify" title="Jobify" thumbnail={thumbJobify}>
+            A job tracking fullstack web application
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem id="todo" title="Todo App" thumbnail={thumbTodo}>
+            An animated todo reactjs build
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+          <WorkGridItem id="gericht" title="Gericht" thumbnail={thumbGericht}>
+            A beautifully designed landing page for a restaurant
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-            The mode magazine for understanding to personally enjoy Japan
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
+        <Section delay={0.2}>
+          <WorkGridItem id="chatify" thumbnail={thumbChatify} title="Chatify">
+            A real-time chatting web application
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -84,35 +59,49 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Clones
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
+          <WorkGridItem id="linkedin" thumbnail={thumbLinked} title="Linkedin">
+            Fully-Responsive Linkedin Clone
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
-          <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
-          >
-            Automatic audio file tagging tool using FreeDB for Windows
+          <WorkGridItem id="medium" thumbnail={thumbMedium} title="Medium">
+            Medium blog Nextjs clone
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+          <WorkGridItem id="amazon" thumbnail={thumbAmazon} title="Amazon">
+            Fully functional Amazon clone(E-commerce website)
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.6}>
+          <WorkGridItem id="airbnb" thumbnail={thumbAirbnb} title="Airbnb">
+            Airbnb clone with mapbox integration
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.7}>
+          <WorkGridItem
+            id="coinbase"
+            thumbnail={thumbCoinbase}
+            title="Coinbase"
+          >
+            Coinbase clone with thirdWeb integration
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.7}>
+          <WorkGridItem id="netflix" thumbnail={thumbNetflix} title="Netflix">
+            Netflix clone with stripe and subscriptions
           </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
   </Layout>
-)
+);
 
-export default Works
-export { getServerSideProps } from '../components/chakra'
+export default Works;
+export { getServerSideProps } from '../components/chakra';
