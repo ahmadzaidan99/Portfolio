@@ -70,7 +70,10 @@ const Home = () => (
           all the way to solving real-life problems with code.
         </Paragraph>
         <Box align="center" my={4}>
-          <Link href="https://pdfhost.io/v/kHNOgJIaq_CV" target="_blank">
+          <Link
+            href="https://pdfhost.io/v/9Q1KhZi37_FullStack_Web_Developer"
+            target="_blank"
+          >
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My Resume
             </Button>
